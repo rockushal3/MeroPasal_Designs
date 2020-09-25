@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+     <!-- include your icon here -->
+    <item>
+        <shape android:shape="oval"> <!-- or rectangle -->
+            <solid android:color="#F28500"/>
+            <stroke
+                android:width="2dp"
+                android:color="#F28500" />
+        </shape>
+    </item>
+</layer-list>

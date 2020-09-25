@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    //Cardview short user information display//
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="2dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            
+            android:padding="15dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userimg"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/fox"
+                  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="8">
+
+                <Button
+                    android:id="@+id/Loginbtn"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/loginsignupbtn"
+                    android:gravity="center"
+                    android:text="Login or Register"
+
+                    android:textColor="@color/alwayswhite" />
+                <TextView
+                    android:id="@+id/fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:text=""
+
+                    android:textColor="@color/alwaysblack" />
+
+                <TextView
+                    android:id="@+id/acclink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="13dp"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:text="Manage Account Details"
+
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebooksignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/facebookbtn"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:gravity="center"
+            android:visibility="gone"
+
+            android:textColor="@color/alwayswhite" />
+
+        <Button
+            android:id="@+id/googlelogout"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+             android:background="@color/blueAccent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/alwayswhite"
+            android:text="Sign Out"
+             />
+        <Button
+            android:id="@+id/accountlogout"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/userloginbtn"
+            android:textColor="@color/redprimaryAccent"
+            android:gravity="center"
+            android:text="LogOut"
+            />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        //user information in numbers in 2nd Card View//
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+          >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/accstats"
+           android:background="@color/redprimaryAccent"
+
+           android:padding="15dp">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:id="@+id/orderslink"
+               android:layout_weight="1">
+
+
+
+               //If  thelayout is empty simply insert the text view with "-"//
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="10"
+                   android:textSize="22sp"
+                   android:gravity="center"
+                   android:id="@+id/orderscount"
+                   android:textColor="@color/alwayswhite"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="My Orders"
+                   android:gravity="center"
+                   android:textColor="@color/alwayswhite"/>
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="1">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="10"
+                   android:textSize="22sp"
+                   android:gravity="center"
+                   android:textColor="@color/alwayswhite"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Wishlist"
+                   android:gravity="center"
+                   android:textColor="@color/alwayswhite"/>
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="1">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="10"
+                   android:textSize="22sp"
+                   android:gravity="center"
+                   android:textColor="@color/alwayswhite"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Vouchers"
+                   android:gravity="center"
+                   android:textColor="@color/alwayswhite"/>
+
+           </LinearLayout>
+
+
+
+
+
+       </LinearLayout>
+       </androidx.cardview.widget.CardView>
+
+
+        //3rd cart view//
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/editlink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:drawableLeft="@drawable/ic_editprofile"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Shipping Address"
+                    android:id="@+id/managelink"
+                    android:drawableLeft="@drawable/ic_orders"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Returned Products"
+                    android:drawableLeft="@drawable/ic_return"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/returnedlink"
+                    android:padding="10dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        //4th Card View//
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+               android:text="Contact Us"
+                    android:id="@+id/contactlink"
+                    android:drawableLeft="@drawable/ic_contact_us"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Help"
+                    android:id="@+id/helplink"
+                    android:drawableLeft="@drawable/ic_info"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+    </ScrollView>

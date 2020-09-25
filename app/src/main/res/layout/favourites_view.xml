@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/productlayout"
+    android:background="?android:attr/selectableItemBackground"
+    android:foreground="?android:attr/selectableItemBackground"
+
+    android:layout_margin="10dp"
+
+    >
+
+
+    //Create a Staggered Grid View for this view in an recycler adapter//
+
+
+    //Product Ima
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:maxHeight="150dp"
+        android:id="@+id/productimg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mobilephones"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product name"
+        android:id="@+id/productname"
+        android:textSize="20sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="Rs.350"
+            android:id="@+id/productprice"
+            android:textColor="#F28500"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/removebtn"
+
+                android:drawableRight="@drawable/ic_close"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

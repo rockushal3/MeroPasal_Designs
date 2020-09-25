@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/gradient_back2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profileimg"
+        android:layout_centerInParent="true"
+        android:src="@drawable/fox"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileimg"
+        android:id="@+id/fullname"
+        android:text="Shishir Bhndari"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/alwaysblack"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/alwayswhite"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/redprimaryAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="First Name"/>
+
+            //Set User First Name here//
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:id="@+id/fname"
+                    android:text="Shishir"
+                    android:textColor="@color/alwaysblack"
+
+                    android:drawableRight="@drawable/ic_account"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            //Last Name
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/redprimaryAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Last Name"/>
+
+            //Set User Last Name here//
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bhandari"
+                    android:padding="15dp"
+                    android:id="@+id/lname"
+                    android:textColor="@color/alwaysblack"
+
+                    android:drawableRight="@drawable/ic_account"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/redprimaryAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Address"/>
+
+
+            //Set Address Here//
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shitak-Marg, Khumaltar, Lalitpur-15"
+                    android:padding="15dp"
+                    android:textColor="@color/alwaysblack"
+                    android:id="@+id/address"
+
+                    android:drawableRight="@drawable/ic_address"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/redprimaryAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Phone Number"/>
+
+
+            //Set Phone Number Here//
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="+977"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/ic_nepal"
+                    />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9813123222"
+                    android:padding="15dp"
+                    android:textColor="@color/alwaysblack"
+                    android:id="@+id/phone"
+
+                    android:drawableRight="@drawable/ic_phone2"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            //Edit Button//
+            <Button
+                android:id="@+id/editbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="Submit"
+
+                android:padding="20dp"
+                android:background="@color/redprimaryAccent"
+                android:textColor="@color/alwayswhite"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+

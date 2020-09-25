@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/productlayout"
+    android:background="?android:attr/selectableItemBackground"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:background="@color/alwayswhite"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="100dp"
+            >
+            <ImageView
+                android:id="@+id/productimg"
+                android:layout_width="match_parent"
+
+
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_height="match_parent"
+
+                app:srcCompat="@drawable/ad2" />
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+  android:layout_marginLeft="5dp"
+    >
+
+    <TextView
+        android:id="@+id/productname"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:text="Iphone 8 Plus (8GB RAM, 256GB storage)"
+        android:textSize="15dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/alwaysblack" />
+    <TextView
+        android:id="@+id/productprice"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:text="Rs 100"
+        android:textSize="12dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_below="@+id/productname"
+        android:textColor="@color/alwaysblack" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+       android:layout_below="@+id/productprice"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+            android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:layout_weight="3"
+            android:textColor="@color/alwayswhite"
+            android:background="@drawable/round_back2"
+            android:id="@+id/buttonminus"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:textAlignment="center"
+            android:id="@+id/quantityview"
+            android:gravity="center_horizontal" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textColor="@color/alwayswhite"
+            android:background="@drawable/round_back2"
+            android:id="@+id/buttonadd"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/removebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove From Cart"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:background="@color/gray_5"
+            android:drawableRight="@drawable/ic_close"
+            android:textSize="10dp"
+                android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+
